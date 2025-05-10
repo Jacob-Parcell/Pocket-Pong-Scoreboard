@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+header {
+  height: 100px;
+}
+
+body {
+  background-image: url('ping\ pong\ table.jpg');
+  background-size: 1300px 1100px;
+  background-repeat: no-repeat;
+  background-position: 50% 5%;
+}
+
+.paddleContainerPocket {
+  position: relative;
+  border: solid;
+  width: 250px;
+  height: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.paddleContainerLeft {
+  position: relative;
+  display: inline-block;
+  border: solid;
+  width: 250px;
+  height: 250px;
+  margin-right: 50px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+
+.paddleContainerRight {
+  position: relative;
+  display: inline-block;
+  border: solid;
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.playerScore {
+  position: relative;
+  top: -140px;
+  right: 15px;
+  font-size: xxx-large;
+  font-weight: bold;
+  color: white;
+}
+
+.playerName {
+  position: relative;
+  top: -70px;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
