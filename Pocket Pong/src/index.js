@@ -9,8 +9,3 @@ root.render(
     <App />
   </>
 );
-
-
-let count = 0;
-let test = document.getElementById('pocketPlayer');
-
