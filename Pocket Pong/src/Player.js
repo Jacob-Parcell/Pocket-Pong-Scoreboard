@@ -3,7 +3,6 @@ export class Player {
     constructor(name) {
         this._name = name;
         this._score = 0;
-        this._isPocket = false;
     }
 
     get name() {
@@ -14,16 +13,8 @@ export class Player {
         return this._score;
     }
 
-    get isPocket() {
-        return this.isPocket;
-    }
-
     set score(newScore) {
         this._score = newScore;
-    }
-
-    set isPocket(pos) {
-        this._isPocket = pos;
     }
 
     incrementScore = () => {

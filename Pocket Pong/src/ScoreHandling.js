@@ -30,6 +30,12 @@ const updateScore = (elementName) => {
             console.log('Error: Player not found');
     }
 
+    updateLowerDisplay(leftPlayerName, leftScoreDisplay, rightPlayerName, rightScoreDisplay);
+
+};
+
+const updateLowerDisplay = (leftPlayerName, leftScoreDisplay, rightPlayerName, rightScoreDisplay) => {
+    
     //update displayed position of players based on the non-pocket players scores
     if(Number(leftScoreDisplay.innerText) > Number(rightScoreDisplay.innerText)) {
         let tempName = leftPlayerName.innerText;
@@ -44,4 +50,4 @@ const updateScore = (elementName) => {
 };
 
 
-export {updateScore};
+export {updateScore, updateLowerDisplay};
