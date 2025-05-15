@@ -20,6 +20,7 @@ body {
   height: 250px;
   left: 50%;
   transform: translateX(-50%);
+  user-select: none;
 }
 
 .paddleContainerLeft {
@@ -31,6 +32,7 @@ body {
   margin-right: 50px;
   cursor: pointer;
   background-color: transparent;
+  user-select: none;
 }
 
 
@@ -42,6 +44,7 @@ body {
   height: 250px;
   cursor: pointer;
   background-color: transparent;
+  user-select: none;
 }
 
 .playerScore {
@@ -55,9 +58,8 @@ body {
 
 .playerName {
   position: relative;
-  top: -70px;
+  top: -60px;
   text-align: center;
-  font-size: xx-large;
-  font-weight: bold;
+  font: bold 40px Georgia;
 }
 

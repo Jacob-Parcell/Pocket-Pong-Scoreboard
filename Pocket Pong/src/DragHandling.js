@@ -1,5 +1,3 @@
-import { Player } from "./Player";
-import { playerRoster } from "./playerRoster";
 import { updateLowerDisplay } from "./ScoreHandling";
 
 const dragAndReorder = (elementName, event) => {

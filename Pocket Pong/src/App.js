@@ -1,5 +1,4 @@
 import './App.css';
-import { Player } from './Player';
 import { updateScore } from './ScoreHandling';
 import paddleLogo from './paddle.png';
 import { playerRoster } from './playerRoster';
@@ -16,8 +15,8 @@ function App() {
         <div id='pocket row' style={{height: '250px'}}>
           <div id="pocketPlayer" className="paddleContainerPocket" draggable="false">
             <img src={paddleLogo} width='150' height='150' draggable="false"/>
-            <div className='playerScore'>{playerRoster[0].score}</div>
-            <div className ='playerName'>{playerRoster[0].name}</div>
+            <div className='playerScore'>0</div>
+            <div className ='playerName'>{playerRoster[0]}</div>
           </div>
         </div>
         <div id='center divider upper' style={{height: '175px'}}></div>
@@ -27,13 +26,13 @@ function App() {
         <div id='lower row'>
           <button id="leftPlayer" className="paddleContainerLeft" draggable="true" onClick={() => updateScore('leftPlayer')} onDragEnd={(event) => dragAndReorder('leftPlayer', event)}>
             <img src={paddleLogo} width='150' height='150' draggable="false"/>
-            <div className='playerScore'>{playerRoster[1].score}</div>
-            <div className ='playerName'>{playerRoster[1].name}</div>
+            <div className='playerScore'>0</div>
+            <div className ='playerName'>{playerRoster[1]}</div>
           </button>
           <button id="rightPlayer" className="paddleContainerRight" draggable="true" onClick={() => updateScore('rightPlayer')} onDragEnd={(event) => dragAndReorder('rightPlayer', event)}>
             <img src={paddleLogo} width='150' height='150' draggable="false"/>
-            <div className='playerScore'>{playerRoster[2].score}</div>
-            <div className ='playerName'>{playerRoster[2].name}</div>
+            <div className='playerScore'>0</div>
+            <div className ='playerName'>{playerRoster[2]}</div>
           </button>
         </div>
       </div>
